@@ -8,6 +8,7 @@ This repo contains all the drivers I've written for the below list :
 3) UART drivers 
 4) TIMER drivers
 5) Interrupt drivers
+6) GPIO drivers
 
 
 # Toolkits/Boards 
