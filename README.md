@@ -13,6 +13,8 @@ This repo contains all the drivers I've written for the below list :
 
 Our Simpler project includes GPIODriver 1,2,3 are Output Drivers (where we turn on the LED and also toggle it to make it blink) and GPIODriver 4 is the Input Driver (where we drive a LED using the onboard push button)
 
+Our UART Transmitter Driver sends a bunch of characters via the serial port, to view them, I used Minicom for Linux, but for Windows, we can use Tera Term
+
 # Note
 
 I suggest if you're interested to follow along, refer the Driver Dev section in the ARM Assembly notes upload :)
