@@ -4,7 +4,7 @@
 This repo contains all the drivers I've written for the below list :
 
 1) Analog-to-Digital Converter drivers
-2) PWM drivers 
+2) I2C drivers 
 3) UART drivers 
 4) TIMER drivers
 5) Interrupt drivers
