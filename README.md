@@ -11,7 +11,7 @@ This repo contains all the drivers I've written for the below list :
 6) GPIO drivers
 
 
-The GPIO driver is to drive the LED on Port A Pin 5 and then related operations with the LED.
+Our Simpler project includes GPIODriver 1,2,3 are Output Drivers (where we turn on the LED and also toggle it to make it blink) and GPIODriver 4 is the Input Driver (where we drive a LED using the onboard push button)
 
 # Note
 
