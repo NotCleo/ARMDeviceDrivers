@@ -22,7 +22,9 @@ The TIMER driver toggles LED connected to PA5 on board at 1 Hz using TIM2 config
 
 The SysTick initializes PA5 and uses the SysTick timer to blink the LED on and off every 1 second.
 
-The UART transmitter configures UART2 on pin PA2 to transmit data at 9600 baud (8-bit, 1 stop also I've ignored flow control).
+The UART transmitter configures USART2 on pin PA2 to transmit data at 9600 baud (8-bit, 1 stop also I've ignored flow control).
+
+The UART reciever configures USART2(PA2 as TX and PA3 as RX) for 8-bit data, 1 stop bit, 115200 baud rate, receives characters via UART,  blinks an LED(PA5) if the received character is ASCII '1'.
 
 # Note
 
