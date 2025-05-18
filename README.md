@@ -20,6 +20,8 @@ The ADC code configures ADC1 on STM32F411 to read analog input from pin PA1 and 
 
 The TIMER driver toggles LED connected to PA5 on board at 1 Hz using TIM2 configured as a 1-second timer, enabling GPIOA and TIM2 clocks, sets PA5 as output, configures TIM2 with a prescaler and auto-reload, and toggles PA5 on every timer update.
 
+The SysTick initializes PA5 and uses the SysTick timer to blink the LED on and off every 1 second.
+
 # Note
 
 I suggest if you're interested to follow along, refer the Driver Dev section in the ARM Assembly notes upload :)
