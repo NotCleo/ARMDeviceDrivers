@@ -7,7 +7,6 @@ This repo contains all the drivers I've written for the below list :
 2) I2C drivers 
 3) UART drivers 
 4) TIMER drivers
-5) Interrupt drivers
 6) GPIO drivers
 
 
@@ -16,6 +15,8 @@ Our Simpler project includes GPIODriver 1,2,3 are Output Drivers (where we turn 
 Our UART Transmitter Driver sends a bunch of characters via the serial port, to view them, I used Minicom for Linux, but for Windows, we can use Tera Term
 
 Initialized GPIO-B pin for I2C alternate function and sends a byte 0x55 to a slave device with address 0x3C.
+
+The ADC code configures ADC1 on STM32F411 to read analog input from pin PA1 and continuously converts it to a digital value. It then transmits 12-bit ADC values over UART (PA2) to whatever serial terminal connected.
 
 # Note
 
