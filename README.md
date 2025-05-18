@@ -22,6 +22,8 @@ The TIMER driver toggles LED connected to PA5 on board at 1 Hz using TIM2 config
 
 The SysTick initializes PA5 and uses the SysTick timer to blink the LED on and off every 1 second.
 
+The UART transmitter configures UART2 on pin PA2 to transmit data at 9600 baud (8-bit, 1 stop also I've ignored flow control).
+
 # Note
 
 I suggest if you're interested to follow along, refer the Driver Dev section in the ARM Assembly notes upload :)
