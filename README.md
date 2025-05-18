@@ -26,6 +26,8 @@ The UART transmitter configures USART2 on pin PA2 to transmit data at 9600 baud 
 
 The UART reciever configures USART2(PA2 as TX and PA3 as RX) for 8-bit data, 1 stop bit, 115200 baud rate, receives characters via UART,  blinks an LED(PA5) if the received character is ASCII '1'.
 
+The UART implements a full USART2 TX/RX interface, using GPIOA (PA2 for Tx, PA3 for Rx), with an LED blink on receiving the character '1'. It includes peripheral clock enabling, pin mode settings, UART initialization, and simple character I/O with a delay loop for LED control.
+
 # Note
 
 I suggest if you're interested to follow along, refer the Driver Dev section in the ARM Assembly notes upload :)
