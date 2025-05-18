@@ -28,6 +28,11 @@ The UART reciever configures USART2(PA2 as TX and PA3 as RX) for 8-bit data, 1 s
 
 The UART implements a full USART2 TX/RX interface, using GPIOA (PA2 for Tx, PA3 for Rx), with an LED blink on receiving the character '1'. It includes peripheral clock enabling, pin mode settings, UART initialization, and simple character I/O with a delay loop for LED control.
 
+The interrupt driver UART does the following : 
+
+  1) CPU sends first byte and rest are sent from a buffer inside the ISR whenever the UART is ready.
+  2) Eliminates the need for constant polling of the TXE flag, avoids processor idling.
+
 # Note
 
 I suggest if you're interested to follow along, refer the Driver Dev section in the ARM Assembly notes upload :)
